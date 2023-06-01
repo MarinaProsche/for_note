@@ -1,0 +1,613 @@
+-------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 14:46:49
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f2e0c3ac0a0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 14:46:49,873: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 14:46:49,875: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 14:46:50,610: INFO/Beat] beat: Starting...
+[2023-05-31 14:46:50,881: INFO/MainProcess] mingle: all alone
+[2023-05-31 14:46:50,937: INFO/MainProcess] celery@worker ready.
+[2023-05-31 14:46:54,176: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-05-31 14:47:50,688: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:48:50,728: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:49:50,774: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:50:50,828: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:51:50,877: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:52:50,928: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:53:50,984: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:54:51,034: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:55:51,063: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:56:51,120: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:57:51,170: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:58:51,218: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 14:59:51,236: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:00:51,282: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:01:51,326: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:02:51,382: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:03:51,382: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:04:51,408: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:05:51,418: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:06:51,418: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:07:51,466: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:08:51,476: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:09:51,484: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:10:51,522: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:11:51,579: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:12:51,617: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:13:51,617: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:14:51,672: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:15:51,722: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:16:51,769: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:17:51,824: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:18:51,850: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:19:51,889: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:20:51,945: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:21:51,967: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:22:51,994: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:23:52,045: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:24:52,095: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:25:52,106: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:26:52,160: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:27:52,210: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:28:52,241: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:29:52,298: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:30:52,349: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:31:52,399: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:32:52,451: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:33:52,474: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:34:52,524: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:35:52,580: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:36:52,629: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:37:52,677: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:38:52,734: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:39:52,781: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:40:52,830: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:41:52,884: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:42:52,933: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:43:52,982: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:44:53,031: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:45:53,078: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:46:53,125: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:47:53,178: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:48:53,226: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:49:53,273: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 15:50:53,275: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 15:51:30,441: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 16:11:24
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f2b880aefd0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:11:24,997: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 16:11:25,001: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:11:25,301: INFO/Beat] beat: Starting...
+[2023-05-31 16:11:25,307: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:11:26,008: INFO/MainProcess] mingle: all alone
+[2023-05-31 16:11:26,033: INFO/MainProcess] celery@worker ready.
+[2023-05-31 16:11:28,363: INFO/MainProcess] Events of group {task} enabled by remote.
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 16:12:19,323: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 16:13:16
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f4cf3a10e80
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:13:16,815: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 16:13:16,817: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:13:17,760: INFO/Beat] beat: Starting...
+[2023-05-31 16:13:17,771: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:13:17,825: INFO/MainProcess] mingle: all alone
+[2023-05-31 16:13:17,853: INFO/MainProcess] celery@worker ready.
+[2023-05-31 16:13:20,609: INFO/MainProcess] Events of group {task} enabled by remote.
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 16:14:11,166: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 16:17:49
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f99288cdf70
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:17:50,403: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 16:17:50,405: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 16:17:50,732: INFO/Beat] beat: Starting...
+[2023-05-31 16:17:50,742: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:17:51,411: INFO/MainProcess] mingle: all alone
+[2023-05-31 16:17:51,433: INFO/MainProcess] celery@worker ready.
+[2023-05-31 16:17:54,024: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-05-31 16:18:50,777: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:19:50,777: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:20:50,834: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:21:50,887: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:22:50,938: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:23:50,993: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:24:51,042: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:25:51,092: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:26:51,148: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:27:51,198: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:28:51,207: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:29:51,232: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:30:51,281: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:31:51,332: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:32:51,375: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:33:51,426: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:34:51,466: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:35:51,513: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:36:51,516: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:37:51,566: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:38:51,620: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:39:51,670: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:40:51,704: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:41:51,714: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:42:51,765: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:43:51,815: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:44:51,872: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:45:51,922: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:46:51,958: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:47:52,012: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:48:52,061: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:49:52,086: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:50:52,115: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:51:52,166: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:52:52,194: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:53:52,232: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:54:52,248: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:55:52,248: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:56:52,304: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:57:52,354: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:58:52,404: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 16:59:52,459: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:00:52,510: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:01:52,510: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:02:52,563: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:03:52,574: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:04:52,622: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:05:52,675: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:06:52,714: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 17:07:52,764: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 17:08:46,460: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 18:41:13
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f11bd896f40
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 18:41:14,539: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 18:41:14,592: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 18:41:15,329: INFO/Beat] beat: Starting...
+[2023-05-31 18:41:15,598: INFO/MainProcess] mingle: all alone
+[2023-05-31 18:41:15,650: INFO/MainProcess] celery@worker ready.
+[2023-05-31 18:41:16,288: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-05-31 18:41:16,540: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:42:15,847: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:43:15,894: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:44:15,920: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:45:15,976: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:46:16,026: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:47:16,076: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:48:16,091: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:49:16,137: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:50:16,188: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:51:16,233: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:52:16,254: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:53:16,276: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:54:16,324: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:55:16,374: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:56:16,376: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:57:16,429: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:58:16,478: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 18:59:16,522: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:00:16,550: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:01:16,566: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:02:16,566: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:03:16,608: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:04:16,658: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:05:16,705: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:06:16,756: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 19:07:16,805: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 19:07:55,768: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-05-31 23:01:16
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f9f6db3b490
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 23:01:16,986: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-05-31 23:01:16,988: INFO/MainProcess] mingle: searching for neighbors
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-05-31 23:01:17,840: INFO/Beat] beat: Starting...
+[2023-05-31 23:01:17,849: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-05-31 23:01:17,994: INFO/MainProcess] mingle: all alone
+[2023-05-31 23:01:18,038: INFO/MainProcess] celery@worker ready.
+
+worker: Warm shutdown (MainProcess)
+[2023-05-31 21:12:20,053: INFO/MainProcess] beat: Shutting down...
+ 
+ -------------- celery@worker v5.2.2 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.19.0-42-generic-x86_64-with-glibc2.2.5 2023-06-01 10:58:51
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app.tasks:0x7f9e382ea460
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> query            exchange=query(direct) key=query
+                
+
+[tasks]
+  . create_task
+  . passback-task
+
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-06-01 10:58:52,077: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-06-01 10:58:52,080: INFO/MainProcess] mingle: searching for neighbors
+[2023-06-01 10:58:53,089: INFO/MainProcess] mingle: all alone
+[2023-06-01 10:58:53,128: INFO/MainProcess] celery@worker ready.
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+[nltk_data] Error loading stopwords: <urlopen error [Errno -3]
+[nltk_data]     Temporary failure in name resolution>
+[nltk_data] Error loading punkt: <urlopen error [Errno -3] Temporary
+[nltk_data]     failure in name resolution>
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:840: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2023-06-01 10:58:53,378: INFO/Beat] beat: Starting...
+[2023-06-01 10:58:53,387: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 10:59:53,385: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:00:53,387: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:01:53,393: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:02:53,426: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:03:53,476: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:04:53,522: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:05:53,551: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:06:53,586: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:07:53,637: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:08:53,687: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:09:53,708: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:10:53,764: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:11:53,764: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:12:53,815: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:13:53,871: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:14:53,922: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:15:53,955: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:16:53,993: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:17:54,040: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:18:54,056: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:19:54,104: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:20:54,126: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:21:54,162: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:22:54,209: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:23:54,228: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:24:54,275: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:25:52,403: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-06-01 11:25:54,323: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:26:54,371: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:27:54,395: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:28:54,399: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:29:54,447: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:30:54,469: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:31:54,525: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:32:54,575: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:33:54,575: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:34:54,617: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:35:54,643: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:36:54,643: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:37:54,683: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:38:54,733: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:39:54,733: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+[2023-06-01 11:40:54,789: INFO/Beat] Scheduler: Sending due task passback-grades (passback-task)
+
+worker: Warm shutdown (MainProcess)
+[2023-06-01 11:41:41,523: INFO/MainProcess] beat: Shutting down...
